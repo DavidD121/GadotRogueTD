@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://6x4bptx4w8ip"]
+
+[ext_resource type="Script" uid="uid://cr1dtqp541bmv" path="res://scene/highlight_tile.gd" id="1_pxj52"]
+[ext_resource type="Texture2D" uid="uid://cpitxwkwyu0ce" path="res://assets/tiles/towerDefense_tile015.png" id="2_jxn7n"]
+
+[node name="HighlightTile" type="Node2D"]
+script = ExtResource("1_pxj52")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_jxn7n")
+centered = false
