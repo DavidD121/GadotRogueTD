@@ -1,7 +1,7 @@
 class_name Main
 extends Node2D
 
-@export var tower_packed_scene : PackedScene = preload("res://assets/tower/tower.tscn")
+@export var tower_packed_scene : PackedScene = preload("res://assets/towers/Gunner/gunner.tscn")
 @export var building_manager: BuildingManager = null
 @onready var tile_map_layer: TileMapLayer = $TileMapLayer
 

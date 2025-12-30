@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://doy4p2430txjn"]
+[gd_scene load_steps=8 format=4 uid="uid://doy4p2430txjn"]
 
 [ext_resource type="Texture2D" uid="uid://cb4aalfvwkft3" path="res://assets/tiles/towerDefense_tilesheet.png" id="1_itxqv"]
 [ext_resource type="Script" uid="uid://d256l1mu17bkc" path="res://scene/main.gd" id="1_wp4xf"]
 [ext_resource type="PackedScene" uid="uid://cxp36xq1viwsi" path="res://assets/managers/building_manager.tscn" id="2_brvut"]
 [ext_resource type="PackedScene" uid="uid://6x4bptx4w8ip" path="res://scene/highlight_tile.tscn" id="2_v0l8b"]
+[ext_resource type="PackedScene" uid="uid://buqcqjaucmbsw" path="res://assets/towers/Gunner/gunner.tscn" id="5_0ha60"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v0l8b"]
 texture = ExtResource("1_itxqv")
@@ -53,3 +54,6 @@ zoom = Vector2(0.5, 0.5)
 position = Vector2(1067, 556)
 
 [node name="Turrets" type="Node2D" parent="."]
+
+[node name="Tower" parent="Turrets" instance=ExtResource("5_0ha60")]
+position = Vector2(944, 331)
