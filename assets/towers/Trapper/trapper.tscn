@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://budl7hn3aqbop"]
+
+[ext_resource type="Script" uid="uid://2juguuc67ken" path="res://assets/towers/tower.gd" id="1_25a31"]
+[ext_resource type="Texture2D" uid="uid://bxpbvvrf2h5j1" path="res://assets/ui/arrow_basic_w_small.png" id="2_dox66"]
+
+[node name="Trapper" type="Node2D"]
+script = ExtResource("1_25a31")
+icon = ExtResource("2_dox66")
