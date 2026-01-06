@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkyhhq6mnfk2h"]
+
+[ext_resource type="Texture2D" uid="uid://drf3edqon78r2" path="res://assets/ui/button_square_gradient.png" id="1_2fwvj"]
+[ext_resource type="Texture2D" uid="uid://ihcpbaa3kmor" path="res://assets/ui/button_rectangle_depth_gradient.png" id="2_0iwki"]
+[ext_resource type="Texture2D" uid="uid://ewe3rdgsg0sx" path="res://assets/ui/button_rectangle_gradient.png" id="3_sepwh"]
+
+[sub_resource type="Theme" id="Theme_14wem"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="B" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_2fwvj")
+expand_mode = 1
+
+[node name="M" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_14wem")
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="M"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 100
+
+[node name="Title" type="RichTextLabel" parent="M/VBoxContainer"]
+layout_mode = 2
+text = "Rogue TD"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="NewGame" type="TextureButton" parent="M/VBoxContainer"]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
+texture_normal = ExtResource("2_0iwki")
+texture_pressed = ExtResource("3_sepwh")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="M/VBoxContainer/NewGame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "New Game"
+horizontal_alignment = 1
+vertical_alignment = 1

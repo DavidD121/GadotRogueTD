@@ -7,6 +7,7 @@ const TOWER_GROUP: String = "TOWER_GROUP"
 const IS_BUILDABLE: String = "buildable"
 
 var used_tiles: Array[Vector2i] = []
+var placed_tower: Array[Node]
 
 func place_tower(cell_position: Vector2i, tower_packed_scene: PackedScene):
 	if !check_valid_placement(cell_position):

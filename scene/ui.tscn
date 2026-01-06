@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://btrrhethhhkxn"]
+
+[ext_resource type="Texture2D" uid="uid://drf3edqon78r2" path="res://assets/ui/button_square_gradient.png" id="1_kee8w"]
+[ext_resource type="Texture2D" uid="uid://bxpbvvrf2h5j1" path="res://assets/ui/arrow_basic_w_small.png" id="1_onfsl"]
+[ext_resource type="Texture2D" uid="uid://cqp6vd01nxaa2" path="res://assets/towers/Gunner/towerDefense_tile249.png" id="2_xh8xk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytdjg"]
+bg_color = Color(0.59479773, 0.511616, 0.2334348, 1)
+corner_radius_top_left = 20
+corner_radius_bottom_left = 20
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BuildBar" type="Panel" parent="."]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ytdjg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BuildBar"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Gunner" type="TextureButton" parent="BuildBar/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_kee8w")
+
+[node name="Icon" type="TextureRect" parent="BuildBar/VBoxContainer/Gunner"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xh8xk")
+
+[node name="TextureRect" type="TextureRect" parent="BuildBar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = -5.5
+offset_right = 15.0
+offset_bottom = 5.5
+grow_vertical = 2
+texture = ExtResource("1_onfsl")
+expand_mode = 1
