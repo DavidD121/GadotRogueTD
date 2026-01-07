@@ -8,7 +8,6 @@
 [node name="Gunner" type="Node2D"]
 script = ExtResource("1_37vnt")
 icon = ExtResource("2_3r46x")
-state = 1
 
 [node name="Base" type="Sprite2D" parent="."]
 texture = ExtResource("1_mm5d4")

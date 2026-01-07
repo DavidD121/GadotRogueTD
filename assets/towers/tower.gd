@@ -1,3 +1,4 @@
+class_name Tower
 extends Node2D
 
 @export var icon: Texture2D = null

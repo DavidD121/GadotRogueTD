@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="RogueTD"
-run/main_scene="uid://doy4p2430txjn"
+run/main_scene="uid://bprgp8qj3p3gx"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
